@@ -1,0 +1,26 @@
+<div class="menu">
+  <form class="addsub" (submit)="onSubmit()">
+    <input type="text" name="subreddit" [(ngModel)]="subreddit.title">
+    <input type="submit" value="Add Subreddits">
+  </form>
+</div>
+<div class="sideblock" >
+  <h3>List of Subreddits</h3>
+  <div *ngFor = "let sub of subreddits">
+    <p>{{sub}} <span (click)="deleteSubreddit(sub)">&times;</span></p>
+  </div> 
+</div>
+<div class="main">
+  <div [ngClass]="{block: true}" *ngFor = "let news of listofnews; let i = index">
+      <h3>{{i+1}}: <a href="#" (click)="seeAllNews(news.data)">{{news.data.title}}</a></h3>
+      <div class="subject"><p>{{news.data.subreddit}}</p></div>
+      <div *ngIf="poporno" [ngClass]="{modal: true, popup: poporno}" id="myModal" >
+          <div class="modal-content">
+              <p (click)="closeModal()">X</p>
+            <p><a href="https://www.reddit.com/{{thelink}}">{{thetitle}}</a></p>
+            <p>{{selftext}}</p>
+            <div class="subject"><p>{{subredditsubject}}</p></div>
+          </div>            
+      </div>
+  </div> 
+</div>
