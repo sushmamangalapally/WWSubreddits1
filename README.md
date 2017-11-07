@@ -3,11 +3,15 @@
 # Sushma's Note
 Instructions that explains how to set up and run your project:
 
-git clone https://github.com/sushmamangalapally/WWSubreddits1/ SushmaMSubreddits
-Once you've installed it, go to SushmaMSubreddits's folder
-In command line, type npm install
-After that, then run ng serve
-You may navigate to localhost:4200 If you have any question, feel free to reach out to me at my email: sushma.m812@gmail.com
+1. git clone https://github.com/sushmamangalapally/WWSubreddits1/ SushmaMSubreddits
+2. Once you've installed it, go to SushmaMSubreddits's folder
+3. In command line, type npm install
+4. After that, then run ng serve
+5. You may navigate to localhost:4200 
+
+# If you have any question, feel free to reach out to me at my email: sushma.m812@gmail.com
+______
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
 ## Development server
